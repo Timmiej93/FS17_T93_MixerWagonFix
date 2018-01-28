@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="39">
+   <author>Timmiej93</author>
+    <title>
+		<en>MixerWagon Fix</en>
+        <de>Mischfutterwagen Fix</de>
+        <fr>Wagon De Mélangeuse Réparer</fr>
+        <nl>Mengvoerwagen Fix</nl>
+    </title>
+    <multiplayer supported="true"/>   
+	<iconFilename>store.dds</iconFilename>
+	<version>1.0.0.0</version>
+    <description>
+        <en><![CDATA[Adds functionality to the mixerwagon.
+
+Functions:
+- Mixing time: The ingredients for mixed rations now actually need to be mixed for a set amount of time (see below) before they become mixed rations.
+- Decay: Leaving mixed rations in a mixerwagon for too long (see below), will result in it clumping up and unbinding, requiring more mixing. Nothing will be lost, it just requires mixing again.
+
+Times:
+  - Mixing time: Easy: 15s, Normal: 30s, Hard: 60s.
+  - Decay
+    - Starts after: Easy: 6h, Normal: 4h, Hard: 2h.
+    - Fully decayed after: Easy: 36h, Normal: 24h, Hard: 12h.
+
+Notes:
+  - Should automatically work on all mixerwagons that have the 'mixerWagon' specialization.
+  - Mixing status can be seen in the F1 help menu box.
+
+This mod has been tested on a dedicated server. Even though testing was thorough, mistakes may have slipped through. If you find one, please let me know in the ModHub Mod Bug-Reports topic on the GIANTS Software Forum.]]></en>
+		<de><![CDATA[Fügt dem Mischfutterwagen Funktionalität hinzu.
+
+Funktionen:
+- Mischzeit: Die Zutaten für gemischte Rationen müssen nun für eine bestimmte Zeit gemischt werden (siehe unten), bevor sie zu Mischrationen werden.
+- Zerfal: Gemischte Rationen zu lange in einem Mischfutterwagen lassen (siehe unten), wird es sich zusammen ballen und zerfällen. Nichts wird verloren gehen, es muss nur noch einmal gemischt werden.
+
+Zeiten:
+  - Mischzeit: Einfach: 15s, Normal: 30s, Schwer: 60s.
+  - Verfall
+    - Beginnt nach: Einfach: 6st, Normal: 4st, Schwer: 2st.
+    - Vollständig verfallen nach: Einfach: 36 Stunden, Normal: 24 Stunden, Schwer: 12 Stunden.
+
+Anmerkungen:
+  - Sollte automatisch auf allen Mischerwägen mit der Spezialisierung 'mixerWagon' funktionieren.
+  - Der Mischstatus kann in der F1-Hilfe-Menübox angezeigt werden.
+
+Dieser Mod wurde auf einem dedizierten Server getestet. Obwohl die Tests gründlich waren, konnten Fehler durchkommen. Wenn Sie einen finden, lassen Sie es mich bitte im ModHub Mod Bug-Reports Thema auf dem GIANTS Software Forum wissen.]]></de>
+		<fr><![CDATA[Ajoute des fonctionnalités à votre wagon de mélangeur.
+
+Les fonctions:
+- Temps de mélange: Les ingrédients pour les rations mixtes doivent maintenant être mélangés pendant un certain temps (voir ci-dessous) avant de devenir des rations mixtes.
+- Decay: Laissant trop longtemps vos rations mélangées dans un mixerwagon (voir ci-dessous), il s'agglutinera et se déliera, nécessitant plus de mixage. Vous ne perdrez rien, il suffit de mélanger à nouveau.
+
+Fois:
+  - Temps de mélange: Facile: 15s, Normal: 30s, Difficile: 60s.
+  - Pourriture
+    - Commence après: Facile: 6h, Normal: 4h, Difficile: 2h.
+    - Entièrement décomposé après: Facile: 36h, Normal: 24h, Difficile: 12h.
+
+Remarques:
+  - Devrait fonctionner automatiquement sur tous les mélangeurs qui ont la spécialisation 'mixerWagon'.
+  - L'état du mixage peut être vu dans la boîte de menu d'aide F1.
+
+Ce mod a été testé sur un serveur dédié. Même si les tests ont été approfondis, les erreurs peuvent avoir glissé. Si vous en trouvez un, merci de me le signaler dans la rubrique ModHub Mod Bug-Reports sur le forum des logiciels GIANTS.]]></fr>
+		<nl><![CDATA[Voegt functionaliteit toe aan de mengvoerwagen.
+
+Functies:
+- Mengtijd: De ingrediënten voor mengvoer moeten nu daadwerkelijk voor een bepaalde tijd gemengd worden (zie hieronder) voordat ze mengvoer worden.
+- Verval: Wanneer mengvoer te lang in een mengvoerwagen wordt gelaten (zie hieronder), zal het mengvoer gaan klonteren en zich ontbinden. Er gaat niets verloren, het mengvoer moet enkel opnieuw gemengd worden.
+
+Tijden:
+  - Mengtijd: Gemakkelijk: 15s, Normaal: 30s, Moeilijk: 60s.
+  - Verval: 
+    - Begint na: Gemakklijk: 6u, Normaal: 4u, Moeilijk: 2u.
+    - Volledige vervallen na: Gemakklijk: 36u, Normaal: 24u, Moeilijk: 12u.
+
+Opmerkingen:
+  - Zou automatisch moeten werken op alle mengvoerwagens met de 'mixerWagon' specialisatie.
+  - Mengstatus kan gezien worden in het F1 help menu.
+
+Deze mod is getest op een dedicated server. Hoewel de tests grondig waren, zijn er toch misschien fouten doorheen geslipt. Als je er een vindt, laat het me dan weten in het ModHub Mod Bug-Reports-onderwerp op het GIANTS Software Forum.]]></nl>
+ 	</description>
+	
+	<extraSourceFiles>
+        <sourceFile filename="scripts/register.lua" />
+    </extraSourceFiles> 
+
+    <l10n>
+        <text name="T93_MIXING_TIME">
+            <en>Mixing time</en>
+            <de>Mischzeit</de>
+            <fr>Temps de mélange</fr>
+            <nl>Mengtijd</nl>
+        </text>
+        <text name="T93_SECONDS_SUFFIX">
+            <en>%is</en>
+            <de>%is</de>
+            <fr>%is</fr>
+            <nl>%is</nl>
+        </text>
+	</l10n>
+</modDesc>
